@@ -1,0 +1,4 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+rm -f source.zip
+zip -r source.zip . -x "source.zip" -x "__MACOSX" -x ".DS_STORE"

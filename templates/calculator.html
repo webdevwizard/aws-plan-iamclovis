@@ -1,0 +1,293 @@
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+</script>
+<div>
+    <div class="calc_main_content">
+        <div class="row main_inner">
+            <form role="form" method="POST" name="bms_cal" id="bms_cal">
+                <div class="col-sm-6" style="width: 80% !important;">
+                    <div class="form-group "><label for="">Gender:</label>
+                        <div class="form-check"><input class="form-check-input" name="gender" type="radio" id="gender2"
+                                checked="checked" value="2" /> <label class="form-check-label"
+                                for="gender2">Female</label></div>
+                        <div class="form-check"><input class="form-check-input" name="gender" type="radio" id="gender1"
+                                value="1" /> <label class="form-check-label" for="gender1">Male</label></div>
+                    </div>
+                    <div class="form-group"><label for="age">Age:</label>
+                        <select class="form-control age_style" id="age" name="age">
+                            <option id="18">18</option>
+                            <option id="19">19</option>
+                            <option id="20">20</option>
+                            <option id="21">21</option>
+                            <option id="22">22</option>
+                            <option id="23">23</option>
+                            <option id="24">24</option>
+                            <option id="25">25</option>
+                            <option id="26">26</option>
+                            <option id="27">27</option>
+                            <option id="28">28</option>
+                            <option id="29">29</option>
+                            <option id="30">30</option>
+                            <option id="31">31</option>
+                            <option id="32">32</option>
+                            <option id="33">33</option>
+                            <option id="34">34</option>
+                            <option id="35">35</option>
+                            <option id="36">36</option>
+                            <option id="37">37</option>
+                            <option id="38">38</option>
+                            <option id="39">39</option>
+                            <option id="40">40</option>
+                            <option id="41">41</option>
+                            <option id="42">42</option>
+                            <option id="43">43</option>
+                            <option id="44">44</option>
+                            <option id="45">45</option>
+                            <option id="46">46</option>
+                            <option id="47">47</option>
+                            <option id="48">48</option>
+                            <option id="49">49</option>
+                            <option id="50">50</option>
+                            <option id="51">51</option>
+                            <option id="52">52</option>
+                            <option id="53">53</option>
+                            <option id="54">54</option>
+                            <option id="55">55</option>
+                            <option id="56">56</option>
+                            <option id="57">57</option>
+                            <option id="58">58</option>
+                            <option id="59">59</option>
+                            <option id="60">60</option>
+                            <option id="61">61</option>
+                            <option id="62">62</option>
+                            <option id="63">63</option>
+                            <option id="64">64</option>
+                            <option id="65">65</option>
+                            <option id="66">66</option>
+                            <option id="67">67</option>
+                            <option id="68">68</option>
+                            <option id="69">69</option>
+                            <option id="70">70</option>
+                            <option id="71">71</option>
+                            <option id="72">72</option>
+                            <option id="73">73</option>
+                            <option id="74">74</option>
+                            <option id="75">75</option>
+                            <option id="76">76</option>
+                            <option id="77">77</option>
+                            <option id="78">78</option>
+                            <option id="79">79</option>
+                            <option id="80">80</option>
+                            <option id="81">81</option>
+                            <option id="82">82</option>
+                            <option id="83">83</option>
+                            <option id="84">84</option>
+                            <option id="85">85</option>
+                            <option id="86">86</option>
+                            <option id="87">87</option>
+                            <option id="88">88</option>
+                            <option id="89">89</option>
+                            <option id="90">90</option>
+                            <option id="91">91</oppiption>
+                            <option id="92">92</option>
+                            <option id="93">93</option>
+                            <option id="94">94</option>
+                            <option id="95">95</option>
+                            <option id="96">96</option>
+                            <option id="97">97</option>
+                            <option id="98">98</option>
+                            <option id="99">99</option>
+                            <option id="100">100</option>
+                        </select>
+                    </div>
+                    <div class="form-group float-label-control col-sm-12" id="weightDiv"><label for="">Height(Feet and
+                            Inches):</label> <span style="font-size: 17px; color: gray;">Ft </span> <input type="input"
+                            class="form-control" name="height-ft" id="height-ft" required="true" placeholder="0" />
+                        <span style="font-size: 17px; padding: 0 6px; color: gray;">In</span> <input type="input"
+                            class="form-control" name="height-inch" id="height-inch" required="true" placeholder="0" />
+                    </div>
+                    <div class="form-group float-label-control col-sm-12" id="weightDiv"><label for="">Weight
+                            (Pounds):</label> <input type="input" class="form-control" name="weight" id="weight"
+                            required="true" placeholder="0.00" /></div>
+                    <div class="form-group "><label for="">Activity level:</label>
+                        <div class="form-check"><input class="form-check-input" name="activity_level" type="radio"
+                                id="activity_level1.0" value="1.12" fvalue="1.12" checked="checked" /> <label
+                                class="form-check-label" for="activity_level1.0">Sedentary</label></div>
+                        <div class="form-check"><input class="form-check-input" name="activity_level" type="radio"
+                                id="activity_level1.11" value="1.23" fvalue="1.24" /> <label class="form-check-label"
+                                for="activity_level1.11">Lightly Active</label></div>
+                        <div class="form-check"><input class="form-check-input" name="activity_level" type="radio"
+                                id="activity_level1.25" value="1.37" fvalue="1.39" /> <label class="form-check-label"
+                                for="activity_level1.25">Moderately Active</label></div>
+                        <div class="form-check"><input class="form-check-input" name="activity_level" type="radio"
+                                id="activity_level1.48" value="1.60" fvalue="1.57" /> <label class="form-check-label"
+                                for="activity_level1.48">Very Active</label></div>
+                        <div class="form-group " style="width: 350px;"><label for=""
+                                style="font-weight: bold; color: #0f75bc; font-size: 11px;"> When estimating Activity
+                                Level, always assume a baseline of sedentary and build from there. Here is
+                                guide:</label>
+                            <ul class="ul-desc">
+                                <li><span>Sedentary:</span> Typically a desk job. Days spent mostly sitting with very
+                                    little activity.</li>
+                                <li><span>Lightly Active:</span> About 20 minutes per day of Intentional activity,like
+                                    taking a walk after a meal. Those with jobs that require them to be on their feet or
+                                    walking for long period of time.</li>
+                                <li><span>Moderately Active: </span>A lightly active day job and scheduled exercise at
+                                    least a few times per week. Jogs,bike rides, or lifting weights 2-3 times per week.
+                                </li>
+                                <li><span>Very Active:</span> An extremely active day job such as construction or intese
+                                    manual labor, or an intense amount of exercise each day or each week. For instance,
+                                    CroosFit serveral times per week, extremely heavy weight lifting, or multiple
+                                    sessions of High Intensity Interval Training or combat sports.<br /> (Do not choose
+                                    this if you train less than 4-6 per week)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group "><label for="">Health Goal:</label>
+                        <div class="form-check"><input class="form-check-input" name="health_goal" id="health_goal_1.00"
+                                type="radio" value="1.00" checked="checked" /> <label class="form-check-label"
+                                for="health_goal_1.00">Maintain</label></div>
+                        <div class="form-check"><input class="form-check-input" name="health_goal" id="health_goal_0.90"
+                                type="radio" value="0.90" /> <label class="form-check-label"
+                                for="health_goal_0.90">Moderate Fat Loss</label></div>
+                        <div class="form-check"><input class="form-check-input" name="health_goal" id="health_goal_0.80"
+                                type="radio" value="0.80" /> <label class="form-check-label"
+                                for="health_goal_0.80">Extreme Fat Loss</label></div>
+                        <div class="form-check"><input class="form-check-input" name="health_goal" id="health_goal_1.10"
+                                type="radio" value="1.10" /> <label class="form-check-label"
+                                for="health_goal_1.10">Moderate Muscle Growth</label></div>
+                        <div class="form-check"><input class="form-check-input" name="health_goal" id="health_goal_1.15"
+                                type="radio" value="1.15" /> <label class="form-check-label"
+                                for="health_goal_1.15">Extreme Muscle Growth </label></div>
+                        <div class="form-group " style="width: 350px;"><label for=""
+                                style="font-weight: bold; color: #0f75bc; font-size: 11px;"> Here is a guide for Health
+                                Goals:</label>
+                            <ul class="ul-desc">
+                                <li><span>Maintain:</span> You are happy with your weight. You are ofter overall health
+                                    imporvements like increased energy and cognition. you just want to fell great!</li>
+                                <li><span>Moderate Fat Loss:</span> You would like to lose 5-10 pounds and experience
+                                    genral health imporvements like increase energy and cognition You want to fell great
+                                    with less body fat! for long period of time.</li>
+                                <li><span>Extreme Fat Loss: </span> Your weight is negatively impacting your health. You
+                                    want to lose body fat as quickly as possible to prevent futrther health issues.</li>
+                                <li><span>Moderate Muscle Growth:</span> You are genrally happy with your body weight
+                                    and looking to "learn out." You want more lean muscle tissue and a bit less body
+                                    fat.</li>
+                                <li><span>Extreme Muscle Growth:</span> You are looking to pack on as much lean muscle
+                                    mass as possible in the shortest amount of time.<br /> (Do not choose this option if
+                                    you are not following a heavy weight lifing protocol)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-left"><button class="btn btn-outline-info" type="submit">Calculate <i
+                                class="fa fa-paper-plane-o ml-2"></i> </button></div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-6" style="width: 83% !important;" id="calculatedResult">
+            <div class="calculated_result row">
+                <div class="form-group daily_calory row">
+                    <div class="calculated_result_name_show" id="calculated_result_name_show"></div>
+                    <div class="calculated_result_label">Daily Caloric Need</div>
+                    <div class="calculated_result_cal_val" id="calculated_result_cal_val"></div>
+                </div>
+                <div class="form-group daily_calory_sub row">
+                    <div id="fat_result" class="row">
+                        <div class="label_calory_sub ">fat:</div>
+                        <div class="value_calory_sub"></div>
+                    </div>
+                    <div id="carbs_result" class="row">
+                        <div class="label_calory_sub">net carbs:</div>
+                        <div class="value_calory_sub"></div>
+                    </div>
+                    <div id="protein_result" class="row">
+                        <div class="label_calory_sub">protein:</div>
+                        <div class="value_calory_sub"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // <![CDATA[
+    $(function () {
+        $("#user_name").focus();
+    });
+    $("#bms_cal").submit(function (event) {
+        var f_gender = 2;
+        var m_gender = 1;
+
+
+        var fName = jQuery('#user_name').val();
+        var lName = jQuery('#user_name_l').val();
+        var nameShow = fName + " " + lName;
+        var age = jQuery('#age').val();
+        var heightFt = jQuery('#height-ft').val();
+        var heightInch = jQuery('#height-inch').val();
+        var userEmail = jQuery("#user_email").val();
+
+
+        var height = (heightFt * 30.48) + (heightInch * 2.54);
+        height = Math.round(height);
+        var weight = (jQuery("#weight").val()) * (0.453592);
+        weight = Math.round(weight);
+        var gender = jQuery("input[name='gender']:checked").val();
+        var isMale = m_gender == gender;
+        var activityNode = jQuery("input[name='activity_level']:checked");
+        var activity_level = isMale ? activityNode.val() : activityNode.attr('fvalue');
+        var health_goal = jQuery("input[name='health_goal']:checked").val();
+
+        var totalCal = calTotalCalories(weight, height, age, activity_level, health_goal, isMale);
+        var totalFat = calFat(totalCal);
+        var totalProtein = calProtein(totalCal);
+        var totalCarbs = calNetCarbs(totalCal);
+
+        if (totalCal) {
+            jQuery(".calculated_result").show();
+            /* jQuery("#calculated_result_name_show").html(nameShow); */
+            jQuery("#calculated_result_cal_val").html(totalCal);
+            jQuery("#fat_result .value_calory_sub").html(totalFat + " grams");
+            jQuery("#carbs_result .value_calory_sub").html(totalCarbs + " grams");
+            jQuery("#protein_result .value_calory_sub").html(totalProtein + " grams");
+
+            $('html, body').animate({
+                scrollTop: ($('#calculatedResult').offset().top - 140)
+            }, 500);
+        }
+        event.preventDefault();
+    });
+
+
+    function calTotalCalories(weight, height, age, activityLevel, health_goal, isMale) {
+        var baseCalVal = (10 * weight) + (height * 6.25) - (age * 5);
+        var minCalVal;
+        if (isMale) {
+            baseCalVal += (1 * 5);
+            minCalVal = 1650;
+        } else {
+            baseCalVal -= (1 * 161);
+            minCalVal = 1350;
+        }
+        baseCalVal = Math.floor(baseCalVal) * activityLevel * health_goal;
+        baseCalVal = Math.floor(baseCalVal);
+        baseCalVal = baseCalVal < minCalVal ? minCalVal : baseCalVal;
+
+        return baseCalVal;
+    }
+
+    function calFat(ttlCalories) {
+        return Math.round((ttlCalories * .6) / 9);
+    }
+
+    function calProtein(ttlCalories) {
+        return Math.round((ttlCalories * .3) / 4);
+    }
+
+    function calNetCarbs(ttlCalories) {
+        return Math.round((ttlCalories * .1) / 4);
+    }
+    // ]]>
+</script>

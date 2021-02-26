@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Montserrat-SemiBold'; 
+    src: url('/static/fonts/Montserrat-SemiBold.otf'); 
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular'; 
+    src: url('/static/fonts/Montserrat-Regular.otf'); 
+}
